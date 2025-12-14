@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    color: #fff;
+}
+
+main {
+    padding: 40px;
+}
+
+/* Home Page */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-pic {
+    width: 180px;
+    border-radius: 50%;
+}
+
+/* Projects Page */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact Page */
+.contact-section, .resume-section {
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #444;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-pic {
+        width: 140px;
+    }
+}
